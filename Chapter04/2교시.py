@@ -46,7 +46,8 @@ while True :
         break
     else :
         if write == 'apple' :
+            print("apple을 입력했습니다.")
             continue
-        print("이 단어를 입력하였습니다 : ", write) #apple을 입력하여 continue가 동작하였을 경우엔 출력이 되지 않음.
+        print("이 단어를 입력하였습니다 : ", write, write, write) #apple을 입력하여 continue가 동작하였을 경우엔 출력이 되지 않음.
     print("아직 while 반복문 안에 있습니다.")
 print("while문이 종료되었습니다.")
