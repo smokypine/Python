@@ -122,6 +122,50 @@ food.clear()
 print("clear 한 이후 food :", food)
 ##del food <---- 메모리에 있던 food 리스트를 삭제한다.
 
+print("\n")
+
+#sort
+print("======= sort 정렬 ======")
+lst1 = [10, 4, 23, 6, 3, 1, 56, 8, 2]
+print("lst1 :", lst1)
+print("sorted(lst1)을 한 lst1 :", sorted(lst1)) ##변경이 되긴 하지만 lst1의 값이 변하지는 않는다.
+print("lst1 :", lst1)
+lst1.sort()
+print("sort를 한 뒤의 lst1 :", lst1)
+
+print("\n")
+
+
+## 리스트 컴프리헨션
+## 리스트를 작성하는데 긴 코드가 아니라 짧게 쓰고 싶다.
+print("======= 리스트 컴프리헨션 ======")
+lst3 = []
+for i in range(11) :
+    lst3.append(i)
+print("lst3 :", lst3)
+#리스트 컴프리헨션을 작성하는 법
+#리스트 변수명 = [항목 for i in range(11)]
+l3 = [i for i in range(0,11,2)] #l3 : [0, 2, 4, 6, 8, 10]
+print("l3 :", l3)
+
+#리스트 컴프리헨션으로 0~10까지의 숫자의 제곱을 원소로 가지는 리스트를 작성하라.
+#i**2
+print("======= 리스트 컴프리헨션으로 0~10까지의 숫자의 제곱을 원소로 가지는 리스트를 작성하라. ======")
+lst4 = [i**2 for i in range(0,11)]
+print("lst4 :", lst4)
+print("======= 리스트 컴프리헨션으로 0~10까지의 숫자의 3배를 원소로 가지는 리스트를 작성하라. ======")
+lst4 = [i*3 for i in range(0,11)]
+print("lst4 :", lst4)
+print("======= 리스트 컴프리헨션으로 'hello' 원소를 10개 가지는 리스트를 작성하라. ======")
+lst4 = ['Hello' for i in range(0,11)]
+print("lst4 :", lst4)
+
+
+
+
+
+
+
 ###튜플
 ##튜플은 수정이 불가능하다. ---> append, insert, 값 변경이 불가능함.
 ##('김', '이', '박', '최')
