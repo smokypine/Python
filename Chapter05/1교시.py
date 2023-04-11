@@ -107,6 +107,14 @@ print("food :", food) ##food : ['짜장면', '막국수', '순대국밥', '마�
 
 print("\n")
 
+#reverse
+print("======= reverse ======") ## 순서를 바꾸어버린다.
+print("food :", food)
+food.reverse()
+print("reverse를 한 food :", food)
+
+print("\n")
+
 #clear
 print("======= clear ======")
 print("clear 하기 이전 food :", food)
