@@ -37,3 +37,17 @@ print(arrA / arrB) # [0.16666667 0.28571429 0.375      0.44444444 0.5       ]
 # 별명짓기
 import numpy as np # <----- 앞으로 넘파이를 np라 서술하겠다.
 arrC = np.array([11,12,13,14,15])
+
+
+### 다른 파일을 import 하기 ###
+import hello as h # <---- 같은 디렉토리에 있는 hello.py파일을 import한다. 이 경우 hello.py 파일이 전부 실행이 되게 된다.
+
+print("=========================")
+h.helloWorld() # <---- hello.py 파일에 입력된 helloWorld() 함수를 불러왔다.
+
+print("__name__ : ", __name__) # <---------- __name__ :  __main__ 이 출력된다.
+
+## 같은 디렉터리의 하위 디렉터리에 있는 파일을 import 하기 ##
+from HONG.DataAnalysis import helloData as hd
+hd.helloWorld()
+
