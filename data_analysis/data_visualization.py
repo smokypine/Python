@@ -21,14 +21,19 @@ sales = [10,2,4,5,6]
 # plt.barh(companies, sales, height=0.5 , color = 'yellow')
 plt.barh(companies, sales, height=0.8 , color = 'red')
 plt.show()
+#plt.cla()
 
-'''
+
 plt.bar(companies, sales)
-plt.cla()
+plt.show()
+#plt.cla()
+
+
 plt.plot([2,4,6,8],[2,4,6,8], label="label1")  
 plt.plot([12,14,16,18],[12,14,16,18], color='red', marker='o', alpha=0.5, linewidth=2, label="label2")
-plt.legend()  # legend를 나타내고 싶을때
- 
+plt.legend()  # legend를 나타내고 싶을때. legend란 범례. 이름을 나타내는 것. 이게 없으면 좌측 상단에 이름이 안 나타난다.
+plt.show()
+'''
 #지우고 싶을때는 
 #plt.cla() #기존에 plt 의 값을 지우고 싶을떄
 plt.show() # 그래프를 그릴때

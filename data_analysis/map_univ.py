@@ -6,7 +6,7 @@ seoul_map = folium.Map(location=[37.55,126.98], zoom_start=12)
 seoul_map.save('./seoul.html')
 
 seoul_map2 = folium.Map(location=[37.51,126.88], tiles='Stamen Terrain', zoom_start=15) # 학교위치.
-
+seoul_map2.show_in_browser()
 
 
 
