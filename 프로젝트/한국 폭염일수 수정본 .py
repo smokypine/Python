@@ -4,7 +4,7 @@ import csv
 import matplotlib.pyplot as plt 
 import numpy as np
 ## 폭염일수
-f1 = open('C:/Users/김동현/Desktop/2학년 1학기 파이썬 수업/Python/프로젝트/온실가스_평균기온/폭염일수 1973~2022.csv', encoding='cp949')            # CSV 파일 열어 f에 저장 
+f1 = open('C:/Users/김동현/Desktop/2학년 1학기 파이썬 수업/Python/프로젝트/온실가스_평균기온/폭염일수/한국 평균 폭염일수 1973~2022.csv', encoding='cp949')            # CSV 파일 열어 f에 저장 
 Hit = csv.reader(f1)                       # reader() 함수로 읽기
 header = next(Hit)                         # 헤더 제거
 
@@ -109,3 +109,9 @@ plt.xticks(np.arange(1973, 2023, 2), rotation=70)
 plt.title("KOR Average Heatwave days Since 1973")  # 제목 설정
 plt.legend()
 plt.show()
+
+### 한국 전국 폭염일수 데이터
+print("yeardata : ", yeardata)##년도
+print("hitday : ", hitday)##년도별 폭염일
+print("avg_Year_Temp : ", avg_Year_Temp)##년도별 평균온도
+print("hit_mean : ", hit_mean)##1990이전 평균 폭염일, 1990년대 평균 폭염일, 2000년대 평균 폭염일, 2010년대 평균 폭염일, 2020년대 평균 폭염일 
